@@ -1,0 +1,48 @@
+{
+  "name": "@bytebitlabs/nestjs-qdrant",
+  "version": "1.0.0",
+  "description": "Nest - modern, fast, powerful node.js web framework (@opensearch-project/opensearch)",
+  "author": "Oxnairb <0xnairb@bytebitlabs.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"lib/**/*.ts\" --fix",
+    "format": "prettier \"lib/**/*.ts\" --write",
+    "build": "rimraf -rf dist && tsc -p tsconfig.json",
+    "precommit": "lint-staged",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prerelease": "npm run build",
+    "release": "release-it",
+    "prepare": "husky install"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@qdrant/js-client-rest": "^1.10.0",
+    "rxjs": "^7.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-angular": "19.3.0",
+    "@nestjs/common": "10.3.10",
+    "@qdrant/js-client-rest": "^1.10.0",
+    "@types/node": "20.14.14",
+    "@typescript-eslint/eslint-plugin": "8.0.0",
+    "@typescript-eslint/parser": "8.0.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "husky": "9.1.4",
+    "lint-staged": "15.2.7",
+    "prettier": "3.3.3",
+    "release-it": "17.6.0",
+    "rimraf": "6.0.1",
+    "rxjs": "7.8.1",
+    "typescript": "5.5.4"
+  },
+  "lint-staged": {
+    "**/*.{ts,json}": []
+  },
+  "repository": {
+    "url": "https://github.com/bytebitlabs/nestjs-qdrant"
+  }
+}
