@@ -1,6 +1,6 @@
 {
   "name": "@bytebitlabs/nestjs-qdrant",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nest - modern, fast, powerful node.js web framework (@opensearch-project/opensearch)",
   "author": "Oxnairb <0xnairb@bytebitlabs.com>",
   "license": "MIT",

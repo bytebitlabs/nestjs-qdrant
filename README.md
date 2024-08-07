@@ -117,7 +117,7 @@ It works the same as `useClass` with one critical difference - `QdrantModule` wi
 ## API Spec
 
 The `QdrantService` wraps the `QdrantClient` from the official [@qdrant/js-client-rest
-](https://www.npmjs.com/package/@opensearch-project/opensearch) methods. The `OpensearchModule.register()` takes `options` object as an argument, [read more](https://opensearch.org/docs/latest/clients/javascript/index).
+](https://www.npmjs.com/package/@qdrant/js-client-rest) methods. The `QdrantModule.register()` takes `options` object as an argument, [read more](https://qdrant.tech/documentation/quickstart/).
 
 ## Support
 
